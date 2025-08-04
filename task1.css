@@ -1,0 +1,74 @@
+body{
+    margin:0;
+    padding:0;
+}
+.head{
+    display:flex;
+    flex-wrap:wrap;
+    background-color: blueviolet;
+    color:white;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 30px;
+}
+nav ul li{
+    display:inline-block;
+    text-decoration: none;
+    margin-left:30px;
+    font-size:x-large;
+}
+.Home{
+    background:linear-gradient(white,blueviolet);
+    display:flex;
+    /* flex-wrap:wrap; */
+}
+.Home img{
+    width:400px;
+    height:auto;
+}
+.Home div{
+    margin:auto;
+    margin-left:200px;
+    margin-right:200px;
+}
+.Home div h1{
+    margin-top:50px;
+    font-size:50px;
+    margin-bottom: 50px;;
+}
+.Home div p{
+    font-size:x-large;
+    margin-bottom: 60px;
+}
+.newLaunch{
+    background:linear-gradient(white,rgb(240, 139, 195));
+    text-align: center;
+    margin-top:50px;
+    margin-bottom:70px;
+}
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    height:auto;
+}
+.products div{
+    border:2px solid black;
+    height:auto;
+    padding:20px;
+    margin-left: 25px;
+    margin-bottom:50px;
+    margin-top:50px;
+    font-size:22px;
+}
+.offers{
+    background:linear-gradient(white,rgb(70, 174, 243));
+    text-align:center;
+    height:auto;
+    margin-top: 70px;
+    padding-bottom:70px;
+}
+.offers p{
+    margin-top: 80px;
+    font-size: 24px;
+    font-weight:900;
+}
