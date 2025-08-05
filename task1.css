@@ -2,6 +2,10 @@ body{
     margin:0;
     padding:0;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top:95px;
+}
 .head{
     display:flex;
     flex-wrap:wrap;
@@ -9,32 +13,46 @@ body{
     color:white;
     justify-content:space-between;
     align-items:center;
-    padding:10px 30px;
+    padding:20px 40px;
+    position:sticky;
+    top:0;
 }
-nav ul li{
+nav ul li {
     display:inline-block;
     text-decoration: none;
     margin-left:30px;
     font-size:x-large;
 }
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
 .Home{
     background:linear-gradient(white,blueviolet);
     display:flex;
-    /* flex-wrap:wrap; */
+    align-items:center;
+    justify-content: center;
+    gap:40px;
+    padding:50px 10px;
+    flex-wrap:wrap;
 }
 .Home img{
-    width:400px;
+    width:100%;
+    max-width:400px;
     height:auto;
 }
 .Home div{
     margin:auto;
-    margin-left:200px;
-    margin-right:200px;
+    max-width:600px;
+    padding:30px;
 }
 .Home div h1{
     margin-top:50px;
     font-size:50px;
-    margin-bottom: 50px;;
+    margin-bottom: 70px;
+    color:white;
+    text-shadow:0px 0px 5px black,0px 0px 10px black,0px 0px 15px black,0px 0px 20px black;
+    
 }
 .Home div p{
     font-size:x-large;
@@ -43,8 +61,11 @@ nav ul li{
 .newLaunch{
     background:linear-gradient(white,rgb(240, 139, 195));
     text-align: center;
-    margin-top:50px;
-    margin-bottom:70px;
+    padding-top:30px;
+}
+.newLaunch img{
+    width:100%;
+    max-width:300px;
 }
 .products{
     display:flex;
@@ -54,21 +75,28 @@ nav ul li{
 .products div{
     border:2px solid black;
     height:auto;
-    padding:20px;
-    margin-left: 25px;
-    margin-bottom:50px;
-    margin-top:50px;
+    padding:10px;
+    margin: 30px auto;
     font-size:22px;
 }
 .offers{
     background:linear-gradient(white,rgb(70, 174, 243));
     text-align:center;
     height:auto;
-    margin-top: 70px;
-    padding-bottom:70px;
+    padding-bottom:40px;
+    padding-top:30px;
 }
 .offers p{
     margin-top: 80px;
     font-size: 24px;
     font-weight:900;
+}
+a:hover{
+    font-size:26px;
+}
+@media(width < 780px){
+    html{
+        scroll-padding-top:140px;
+       
+    }
 }
